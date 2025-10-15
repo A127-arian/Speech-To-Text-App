@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif; /* A modern, readable font */
+    text-align: center;
+    background-color: #f4f4f4; /* A light gray background */
+    color: #333; /* Dark gray text color */
+    padding: 20px;
+}
+#startButton {
+    background-color: #007bff; /* A blue button */
+    color: black;
+    border: forestgreen;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth color transition on hover */
+}
+#startButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+#output {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid orange; /* Fixed border with solid style */
+    min-height: 100px;
+    background-color: white;
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* subtle shadow for depth */
+}

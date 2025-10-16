@@ -1,5 +1,5 @@
 const output = document.getElementById("output");
-const startButton = document.getElementById("StartListning");
+const startButton = document.getElementById("startbutton");
 let finalTranscript = "";
 
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -36,13 +36,14 @@ recognition.addEventListener('end', () => {
     // We don't need to restart here since recognition.continuous = true
     // However, if the recognition service times out or has an error, you might restart it here.
     // For now, this will simply change the button text when manually stopped.
-    startButton.textContent = 'StartListening';
+    startButton.textContent = 'Start Listening';
 });
 
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
         recognition.stop();
-        startButton.textContent = 'StartListening';
+        startButton.textContent = 'Start Listening';
     }
 });
+
 
